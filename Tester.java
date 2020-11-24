@@ -23,7 +23,7 @@ public class Tester {
         System.out.println("3934 / 21. Expected 187.33333333333334 | Output " + moo1.divide(boo1));
         System.out.println();
         //
-/*
+
         // RationalNumber only tests
         System.out.println("----------RationalNumber only tests----------");
         System.out.println("----------Constructor tests----------");
@@ -42,7 +42,7 @@ public class Tester {
         System.out.println("Init : 100/100. Expected 1/1 | Output " + f.toString());
         System.out.println("Init : 39/156. Expected 1/4 | Output " + g.toString());
         System.out.println();
-
+/*
         System.out.println("----------Equals tests----------");
         RationalNumber moo = new RationalNumber(-10,-20);
         RationalNumber boo = new RationalNumber(40,80);
