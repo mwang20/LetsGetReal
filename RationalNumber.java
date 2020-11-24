@@ -12,4 +12,16 @@ public class RationalNumber extends RealNumber{
       denominator = 1;
     }
   }
+
+  public double getValueOf(){
+    return 0.0;
+  }
+
+  public int getNumerator(){
+    return numerator;
+  }
+
+  public int getDenominator(){
+    return denominator;
+  }
 }
