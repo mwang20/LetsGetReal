@@ -90,4 +90,13 @@ public class RationalNumber extends RealNumber{
     RationalNumber c = new RationalNumber(aNume * bDeno, aDeno * bNume);
     return c;
   }
+
+  public RationalNumber add(RationalNumber other){
+    int aNume = this.getNumerator();
+    int aDeno = this.getDenominator();
+    int bNume = other.getNumerator();
+    int bDeno = other.getDenominator();
+    RationalNumber c = new RationalNumber((aNume * bDeno) + (bNume * aDeno), aDeno * bDeno);
+    return c;
+  }
 }

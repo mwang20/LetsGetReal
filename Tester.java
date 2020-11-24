@@ -57,12 +57,13 @@ public class Tester {
         RationalNumber goo = new RationalNumber(1, 0);
         System.out.println("40/240 / 1/0. Expected 0/1 | Output " + zoo.divide(goo));
         System.out.println();
-/*
+
         System.out.println("----------Addition/Subtraction tests----------");
         RationalNumber gloo = new RationalNumber(30,-50);
         RationalNumber foo = new RationalNumber(64,80);
         System.out.println("30/-50 + 64/80. Expected 1/5 | Output " + gloo.add(foo));
         System.out.println("30/50 + 64/80. Expected 7/5 | Output " + gloo.multiply(new RationalNumber(-1,1)).add(foo));
+        /*
         System.out.println("30/-50 - 63/81. Expected -7/5 | Output " + gloo.subtract(foo));
         System.out.println("30/50 - 63/81. Expected -1/5 | Output " + gloo.multiply(new RationalNumber(-1,1)).subtract(foo));
         System.out.println();
