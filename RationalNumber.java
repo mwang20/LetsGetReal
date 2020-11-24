@@ -66,12 +66,12 @@ public class RationalNumber extends RealNumber{
       r = a % b;
       b = r;
     }
-    return r;
+    return a;
   }
 
   private void reduce(){
     if (gcd(numerator, denominator) == 0){
-      numerator = 1;
+      numerator = 0;
       denominator = 1;
     }
     else {
