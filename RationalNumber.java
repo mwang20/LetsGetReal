@@ -35,4 +35,11 @@ public class RationalNumber extends RealNumber{
     }
     return false;
   }
+
+  public RationalNumber reciprocal(){
+    int a = denominator;
+    int b = numerator;
+    RationalNumber c = new RationalNumber(a, b);
+    return c;
+  }
 }
