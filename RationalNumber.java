@@ -8,15 +8,15 @@ public class RationalNumber extends RealNumber{
       numerator = 0;
       denominator = 1;
     }
-    else if (nume == 0){
+    if (nume == 0){
       denominator = 1;
     }
-    else if (denominator < 0) {
+    if (deno < 0) {
       denominator = denominator * (-1);
       numerator = numerator * (-1);
       reduce();
     }
-    else reduce();
+    reduce();
   }
 
   public double getValueOf(){
@@ -53,20 +53,14 @@ public class RationalNumber extends RealNumber{
   }
 
   private static int gcd(int a, int b){
-    int r = -1;
-    if (a == b){
-      return a;
+    int c = Math.min(a, b);
+    int divisor = 1;
+    for(int i = 1; i <= c; i++){
+        if(a % i == 0 && b % i == 0){
+            divisor = i;
+        }
     }
-    if (b > a){
-      a = b;
-      b = a;
-    }
-    while (r != 0){
-      a = Math.round(a / b);
-      r = a % b;
-      b = r;
-    }
-    return a;
+    return divisor;
   }
 
   private void reduce(){
@@ -74,10 +68,8 @@ public class RationalNumber extends RealNumber{
       numerator = 0;
       denominator = 1;
     }
-    else {
-      int d = gcd(numerator, denominator);
-      numerator = numerator / d;
-      denominator = denominator / d;
-    }
+    int gcd = gcd(numerator, denominator);
+    numerator = numerator / gcd;
+    denominator = denominator / gcd;
   }
 }
