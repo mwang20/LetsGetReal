@@ -81,4 +81,13 @@ public class RationalNumber extends RealNumber{
     RationalNumber c = new RationalNumber(aNume * bNume, aDeno * bDeno);
     return c;
   }
+
+  public RationalNumber divide(RationalNumber other){
+    int aNume = this.getNumerator();
+    int aDeno = this.getDenominator();
+    int bNume = other.getNumerator();
+    int bDeno = other.getDenominator();
+    RationalNumber c = new RationalNumber(aNume * bDeno, aDeno * bNume);
+    return c;
+  }
 }
