@@ -20,11 +20,10 @@ public class Tester {
         System.out.println("3934 + 21. Expected 3955.0 | Output " + moo1.add(boo1));
         System.out.println("3934 - 21. Expected 3913.0 | Output " + moo1.subtract(boo1));
         System.out.println("3934 * 21. Expected 82614.0 | Output " + moo1.multiply(boo1));
-      /*
         System.out.println("3934 / 21. Expected 187.33333333333334 | Output " + moo1.divide(boo1));
         System.out.println();
         //
-
+/*
         // RationalNumber only tests
         System.out.println("----------RationalNumber only tests----------");
         System.out.println("----------Constructor tests----------");

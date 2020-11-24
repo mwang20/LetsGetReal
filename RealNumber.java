@@ -49,4 +49,11 @@ public class RealNumber{
     RealNumber c = new RealNumber(a * b);
     return c;
   }
+
+  public RealNumber divide(RealNumber other){
+    double a = this.getValue();
+    double b = other.getValue();
+    RealNumber c = new RealNumber(a / b);
+    return c;
+  }
 }
