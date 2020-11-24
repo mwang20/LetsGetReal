@@ -28,4 +28,11 @@ public class RealNumber{
     }
     return false;
   }
+
+  public RealNumber add(RealNumber other){
+    double a = this.getValue();
+    double b = other.getValue();
+    RealNumber c = new RealNumber(a + b);
+    return c;
+  }
 }

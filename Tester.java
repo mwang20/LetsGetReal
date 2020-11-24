@@ -13,11 +13,12 @@ public class Tester {
         RealNumber d1 = new RealNumber (99998);
         System.out.println("100,000 and 99,998 case. Expected false | Output " + c1.equals(d1));
         System.out.println();
-/*
+
         System.out.println("----------Arithmetic tests----------");
         RealNumber moo1 = new RealNumber(3934);
         RealNumber boo1 = new RealNumber(21);
         System.out.println("3934 + 21. Expected 3955.0 | Output " + moo1.add(boo1));
+      /*
         System.out.println("3934 - 21. Expected 3913.0 | Output " + moo1.subtract(boo1));
         System.out.println("3934 * 21. Expected 82614.0 | Output " + moo1.multiply(boo1));
         System.out.println("3934 / 21. Expected 187.33333333333334 | Output " + moo1.divide(boo1));
