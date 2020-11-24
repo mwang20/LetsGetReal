@@ -42,4 +42,21 @@ public class RationalNumber extends RealNumber{
     RationalNumber c = new RationalNumber(a, b);
     return c;
   }
+
+  private static int gcd(int a, int b){
+    int r = -1;
+    if (a == b){
+      return a;
+    }
+    if (b > a){
+      a = b;
+      b = a;
+    }
+    while (r != 0){
+      a = Math.round(a / b);
+      r = a % b;
+      b = r;
+    }
+    return r;
+  }
 }
