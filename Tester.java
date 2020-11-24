@@ -51,8 +51,8 @@ public class Tester {
 
         System.out.println("----------Reciprocal/Multiplication/Division tests----------");
         System.out.println("Reciprocal of -10/-20. Expected 2/1 | Output " + moo.reciprocal());
-        /*
         System.out.println("-10/-20 * 40/80. Expected 1/4 | Output " + moo.multiply(boo));
+        /*
         RationalNumber zoo = new RationalNumber(40, 240);
         System.out.println("-10/-20 / 40/240. Expected 3/1 | Output " + moo.divide(zoo));
         RationalNumber goo = new RationalNumber(1, 0);
