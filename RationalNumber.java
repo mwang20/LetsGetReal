@@ -14,13 +14,12 @@ public class RationalNumber extends RealNumber{
     if (deno < 0) {
       denominator = denominator * (-1);
       numerator = numerator * (-1);
-      reduce();
     }
     reduce();
   }
 
   public double getValueOf(){
-    return ((double)numerator) / ((double)denominator);
+    return (numerator / denominator);
   }
 
   public int getNumerator(){
@@ -53,7 +52,7 @@ public class RationalNumber extends RealNumber{
   }
 
   private static int gcd(int a, int b){
-    int c = Math.min(a, b);
+    int c = Math.abs(Math.min(a, b));
     int divisor = 1;
     for(int i = 1; i <= c; i++){
         if(a % i == 0 && b % i == 0){
@@ -97,6 +96,15 @@ public class RationalNumber extends RealNumber{
     int bNume = other.getNumerator();
     int bDeno = other.getDenominator();
     RationalNumber c = new RationalNumber((aNume * bDeno) + (bNume * aDeno), aDeno * bDeno);
+    return c;
+  }
+
+  public RationalNumber subtract(RationalNumber other){
+    int aNume = this.getNumerator();
+    int aDeno = this.getDenominator();
+    int bNume = other.getNumerator();
+    int bDeno = other.getDenominator();
+    RationalNumber c = new RationalNumber((aNume * bDeno) - (bNume * aDeno), aDeno * bDeno);
     return c;
   }
 }

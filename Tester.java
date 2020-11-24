@@ -63,12 +63,11 @@ public class Tester {
         RationalNumber foo = new RationalNumber(64,80);
         System.out.println("30/-50 + 64/80. Expected 1/5 | Output " + gloo.add(foo));
         System.out.println("30/50 + 64/80. Expected 7/5 | Output " + gloo.multiply(new RationalNumber(-1,1)).add(foo));
-        /*
         System.out.println("30/-50 - 63/81. Expected -7/5 | Output " + gloo.subtract(foo));
         System.out.println("30/50 - 63/81. Expected -1/5 | Output " + gloo.multiply(new RationalNumber(-1,1)).subtract(foo));
         System.out.println();
         //
-
+/*
         // RationalNumber and RealNumber mix tests.
         System.out.println("----------RealNumber comparsion to RationalNumber----------");
         RealNumber k = new RealNumber(.3333333333);
@@ -82,6 +81,5 @@ public class Tester {
         System.out.println("Dividing 1.5 by 3/2. Expected 1.0 | Output " + woj.divide(sham));
         //
 */
-
     }
 }
