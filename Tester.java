@@ -42,13 +42,13 @@ public class Tester {
         System.out.println("Init : 100/100. Expected 1/1 | Output " + f.toString());
         System.out.println("Init : 39/156. Expected 1/4 | Output " + g.toString());
         System.out.println();
-/*
+
         System.out.println("----------Equals tests----------");
         RationalNumber moo = new RationalNumber(-10,-20);
         RationalNumber boo = new RationalNumber(40,80);
         System.out.println("Comparing -10/-20 to 40/80. Expected true | Output " + moo.equals(boo));
         System.out.println();
-
+/*
         System.out.println("----------Reciprocal/Multiplication/Division tests----------");
         System.out.println("Reciprocal of -10/-20. Expected 2/1 | Output " + moo.reciprocal());
         System.out.println("-10/-20 * 40/80. Expected 1/4 | Output " + moo.multiply(boo));

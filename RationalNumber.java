@@ -24,4 +24,15 @@ public class RationalNumber extends RealNumber{
   public int getDenominator(){
     return denominator;
   }
+
+  public boolean equals(RationalNumber other){
+    int aNume = this.getNumerator();
+    int aDeno = this.getDenominator();
+    int bNume = other.getNumerator();
+    int bDeno = other.getDenominator();
+    if ((aNume / aDeno) == (bNume / bDeno)){
+      return true;
+    }
+    return false;
+  }
 }
