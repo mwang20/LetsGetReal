@@ -1,7 +1,7 @@
 public class RationalNumber extends RealNumber{
   private int numerator, denominator;
   public RationalNumber(int nume, int deno){
-    super(nume/deno);
+    super(0.0);
     numerator = nume;
     denominator = deno;
     if (deno == 0){
@@ -70,7 +70,14 @@ public class RationalNumber extends RealNumber{
   }
 
   private void reduce(){
-    numerator = numerator / gcd(numerator, denominator);
-    denominator = denominator / gcd(numerator, denominator);
+    if (gcd(numerator, denominator) == 0){
+      numerator = 1;
+      denominator = 1;
+    }
+    else {
+      int d = gcd(numerator, denominator);
+      numerator = numerator / d;
+      denominator = denominator / d;
+    }
   }
 }
