@@ -1,7 +1,6 @@
-public class RationalNumber extends RealNumber{
+public class RationalNumber extends Number{
   private int numerator, denominator;
   public RationalNumber(int nume, int deno){
-    super(0.0);
     numerator = nume;
     denominator = deno;
     if (deno == 0){
@@ -18,7 +17,7 @@ public class RationalNumber extends RealNumber{
     reduce();
   }
 
-  public double getValueOf(){
+  public double getValue(){
     return (numerator / denominator);
   }
 
