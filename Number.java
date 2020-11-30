@@ -1,7 +1,9 @@
+import java.lang.Math;
+
 public abstract class Number{
 
   public abstract double getValue();
-  
+
   public boolean equals(RealNumber other){
     double a = this.getValue();
     double b = other.getValue();
@@ -15,5 +17,17 @@ public abstract class Number{
       return true;
     }
     return false;
+  }
+
+  public int compareTo(Number other){
+    double a = this.getValue();
+    double b = other.getValue();
+    if (a == b){
+      return 0;
+    }
+    if (a > b){
+      return 1;
+    }
+    else return -1;
   }
 }
